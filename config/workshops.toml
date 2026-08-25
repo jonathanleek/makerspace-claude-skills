@@ -10,11 +10,11 @@ default = "westbound_workshop"
 
 [workshops.westbound_workshop]
 name  = "Westbound Workshop"
-vault = "/Users/jonathanleek/Documents/git/westboundworkshop/westbound_workshop_vault"
+vault = "/Users/jonathanleek/Documents/git/westbound-workshop/westbound-workshop-vault"
 # Folder (relative to vault) holding one note per power tool / machine.
 # PROPOSED, not yet confirmed — see PLAN.md "Open confirms".
 tools_subpath = "Shop Infrastructure/Tools"
 
 # [workshops.arch_reactor]
 # name  = "Arch Reactor"
-# vault = "/Users/jonathanleek/Documents/git/arch_reactor/arch_reactor_vault"
+# vault = "/Users/jonathanleek/Documents/git/arch-reactor/arch-reactor-vault"
