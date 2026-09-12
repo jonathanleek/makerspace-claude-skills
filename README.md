@@ -33,6 +33,10 @@ skills/
   tool-advisor/         # "what can my shop do?"; feeds constraints to other skills
     SKILL.md
     references/inventory-format.md
+  fusion-start/         # launch Fusion, verify its MCP server, open a new design
+    SKILL.md
+    scripts/check-mcp.sh        # layer-by-layer probe of the Fusion MCP endpoint
+    references/troubleshooting.md
   gridfinity/           # object dimensions -> parametric bin -> headless STL
     SKILL.md
     scripts/generate.py         # sizing + render driver
@@ -51,6 +55,13 @@ skills/
   constraints (print-bed size, throat depth) to other skills.
 - **`/gridfinity`** — research an object's dimensions → parametric Gridfinity bin
   → headless STL + params manifest, sized to the printer bed from `tool-advisor`.
+- **`/fusion-start`** — launch Autodesk Fusion, confirm its built-in MCP server
+  (`127.0.0.1:27182/mcp`) answers and is registered with Claude, then open a new
+  design document. `scripts/check-mcp.sh` diagnoses each layer when it doesn't.
+
+> `fusion-start` needs the **Fusion MCP Server** switched on in Fusion
+> (Preferences > General > API) and a `fusion` MCP entry in Claude Code:
+> `claude mcp add --transport http --scope user fusion http://127.0.0.1:27182/mcp`
 
 ## Configuration
 
